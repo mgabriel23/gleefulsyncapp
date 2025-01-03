@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
     var pwaNoCache = false; //Requires server and HTTPS/SSL. Will clear cache with each visit
 
     //Setting Service Worker Locations scope = folder | location = service worker js location
-    const pwaLocation = '/gleefulsync/_service-worker.js'; // Correct path
-    const pwaScope = '/gleefulsync/'; // Scope matches the project folder
+    // const pwaLocation = '/gleefulsync/_service-worker.js'; // Correct path
+    // const pwaScope = '/gleefulsync/'; // Scope matches the project folder
 
     // for production server
-    // const pwaScope = "/";
-    // const pwaLocation = "/_service-worker.js";
+    const pwaScope = "/";
+    const pwaLocation = "/_service-worker.js";
 
     //Place all your custom Javascript functions and plugin calls below this line
     function init_template(){
